@@ -13,7 +13,12 @@ public class tiposPimitivos {
         double altura = 1.68;
         char inicial = 'S';
         boolean vivoOuMorto = true;
-        Long saldoBancario = 30223372037L; // Valor maximo de 9,223372037×10¹⁸ .. teste
+        Long saldoBancario = 30223372037L; // Valor maximo de 9,223372037×10¹⁸ ..
+
+        System.out.println(idade); // Comando para mostrar para o usuário
+        System.out.println("saldo Bancario é  " + saldoBancario);
+        System.out.println("Minha idade é " + idade);
+
 
     }
 }
