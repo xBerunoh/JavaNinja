@@ -1,6 +1,6 @@
 package TiposDeDados;
 
-public class tiposPimitivos {
+public class DadosPimitivos {
     public static void main(String[] args) {
         /* Tipos de Dados PRIMITIVOS
          * byte, short, long,  int, double, float , boolean
