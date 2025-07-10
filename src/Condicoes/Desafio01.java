@@ -26,9 +26,9 @@ public class Desafio01 {
 
 
         String nameNinja2 = "Sasuke";
-        int idadeNinja2 = 16;
+        int idadeNinja2 = 9;
         String missaoNinja2 = "Recuperar uma equipe que foi em uma missão , para coletar informações";
-        char nivelQuestNinja2 = 'B';
+        char nivelQuestNinja2 = 'S';
         String statusMissao2 = "Em Andamento";
 
         String nameNinja3 = "Shikamaru";
@@ -55,7 +55,7 @@ public class Desafio01 {
         System.out.println("Status da Missão:"+statusMissao1);
 
         System.out.println("----------------------------------------");
-        if(idadeNinja1 < 15) {
+        if(idadeNinja2 < 15) {
             if(nivelQuestNinja2 == 'C' ||nivelQuestNinja2 == 'D'){
                 statusMissao2 = "Concluida";
             }else{
