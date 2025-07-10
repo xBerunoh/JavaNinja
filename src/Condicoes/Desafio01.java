@@ -57,7 +57,7 @@ public class Desafio01 {
         }
         if(idadeNinja3 >= 15){
             System.out.println("Ninja  "+nameNinja3);
-            if(nivelQuestNinja3 == 'A' || nivelQuestNinja2 == 'B' || nivelQuestNinja3 == 'C'){
+            if(nivelQuestNinja3 == 'A' || nivelQuestNinja3 == 'B' || nivelQuestNinja3 == 'C'){
                 System.out.println(" CONCLUIDO");
             }else{
                 System.out.println(" Não concluido");
