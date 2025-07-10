@@ -21,19 +21,46 @@ public class Desafio01 {
         String nameNinja1 = "Naruto";
         int idadeNinja1 = 17;
         String missaoNinja1 = "Ajudar a velinha a pintar sua casa";
-        char nivelQuestNinja1 = 'A';
+        String statusMissao1 = "Em Andamento";
+        char nivelQuestNinja1 = 'D';
 
 
         String nameNinja2 = "Sasuke";
         int idadeNinja2 = 16;
         String missaoNinja2 = "Recuperar uma equipe que foi em uma missão , para coletar informações";
         char nivelQuestNinja2 = 'B';
-
+        String statusMissao2 = "Em Andamento";
 
         String nameNinja3 = "Shikamaru";
         int idadeNinja3 = 7;
-        String missaoNinja3 = "Coletar informações de um grupo da aldeia da chuva";
-        char nivelQuestNinja3 = 'A';
+        String missaoNinja3 = "Ajudar os idosos atravessar a rua";
+        char nivelQuestNinja3 = 'C';
+        String statusMissao3 = "Concluido";
+
+        System.out.println("----------------------------------------");
+        System.out.println("Nome do Ninja: "+nameNinja1);
+        System.out.println("Idade do Ninja: "+idadeNinja1);
+        System.out.println("Descrição da Missão: "+missaoNinja1);
+        System.out.println("Ranking da Missão: "+nivelQuestNinja1);
+        System.out.println("Status da Missão:"+statusMissao1);
+
+        System.out.println("----------------------------------------");
+        System.out.println("Nome do Ninja: "+nameNinja2);
+        System.out.println("Idade do Ninja: "+idadeNinja2);
+        System.out.println("Descrição da Missão: "+missaoNinja2);
+        System.out.println("Ranking da Missão: "+nivelQuestNinja2);
+        System.out.println("Status da Missão:"+statusMissao2);
+
+        System.out.println("----------------------------------------");
+        System.out.println("Nome do Ninja: "+nameNinja3);
+        System.out.println("Idade do Ninja: "+idadeNinja3);
+        System.out.println("Descrição da Missão: "+missaoNinja3);
+        System.out.println("Ranking da Missão: "+nivelQuestNinja3);
+        System.out.println("Status da Missão:"+statusMissao3);
+
+        System.out.println("----------------------------------------");
+
+
 
         if(idadeNinja1 >= 15){
             System.out.println("Ninja  "+nameNinja1);
