@@ -22,7 +22,7 @@ public class Desafio01 {
         int idadeNinja1 = 17;
         String missaoNinja1 = "Ajudar a velinha a pintar sua casa";
         String statusMissao1 = "Em Andamento";
-        char nivelQuestNinja1 = 'D';
+        char nivelQuestNinja1 = 'C';
 
 
         String nameNinja2 = "Sasuke";
