@@ -37,7 +37,17 @@ public class Desafio01 {
         char nivelQuestNinja3 = 'C';
         String statusMissao3 = "Concluido";
 
+
         System.out.println("----------------------------------------");
+        if(idadeNinja1 < 15) {
+            if(nivelQuestNinja1 == 'C' ||nivelQuestNinja1 == 'D'){
+                statusMissao1 = "Concluida";
+            }else{
+                statusMissao1 = "Você é muito novo";
+            }
+        }else{
+            statusMissao1 = "Missão Concluida, você já é maior de idade";
+        }
         System.out.println("Nome do Ninja: "+nameNinja1);
         System.out.println("Idade do Ninja: "+idadeNinja1);
         System.out.println("Descrição da Missão: "+missaoNinja1);
@@ -45,6 +55,16 @@ public class Desafio01 {
         System.out.println("Status da Missão:"+statusMissao1);
 
         System.out.println("----------------------------------------");
+        if(idadeNinja1 < 15) {
+            if(nivelQuestNinja2 == 'C' ||nivelQuestNinja2 == 'D'){
+                statusMissao2 = "Concluida";
+            }else{
+                statusMissao2 = "Você é muito novo";
+            }
+        }else{
+            statusMissao2 = "Missão Concluida, você já é maior de idade";
+        }
+
         System.out.println("Nome do Ninja: "+nameNinja2);
         System.out.println("Idade do Ninja: "+idadeNinja2);
         System.out.println("Descrição da Missão: "+missaoNinja2);
@@ -52,6 +72,15 @@ public class Desafio01 {
         System.out.println("Status da Missão:"+statusMissao2);
 
         System.out.println("----------------------------------------");
+        if(idadeNinja3 < 15) {
+            if(nivelQuestNinja3 == 'C' ||nivelQuestNinja3 == 'D'){
+                statusMissao3 = "Concluida";
+            }else{
+                statusMissao3 = "Você é muito novo";
+            }
+        }else{
+            statusMissao3 = "Missão Concluida, você já é maior de idade";
+        }
         System.out.println("Nome do Ninja: "+nameNinja3);
         System.out.println("Idade do Ninja: "+idadeNinja3);
         System.out.println("Descrição da Missão: "+missaoNinja3);
@@ -60,41 +89,8 @@ public class Desafio01 {
 
         System.out.println("----------------------------------------");
 
-
-
-        if(idadeNinja1 >= 15){
-            System.out.println("Ninja  "+nameNinja1);
-            if(nivelQuestNinja1 == 'A' || nivelQuestNinja1 == 'B' || nivelQuestNinja1 == 'C'){
-                System.out.println(" CONCLUIDO");
-            }else{
-                System.out.println(" Não concluido");
-            }
-        }else{
-            System.out.println(nameNinja2+" Não concluido pela idade");
-        }
-        if(idadeNinja2 >= 15){
-            System.out.println("Ninja  "+nameNinja2);
-            if(nivelQuestNinja2 == 'A' || nivelQuestNinja2 == 'B' || nivelQuestNinja2 == 'C'){
-                System.out.println(" CONCLUIDO");
-            }else{
-                System.out.println(" Não concluido");
-            }
-        }else{
-            System.out.println(nameNinja2+" Não concluido pela idade");
-        }
-        if(idadeNinja3 >= 15){
-            System.out.println("Ninja  "+nameNinja3);
-            if(nivelQuestNinja3 == 'A' || nivelQuestNinja3 == 'B' || nivelQuestNinja3 == 'C'){
-                System.out.println(" CONCLUIDO");
-            }else{
-                System.out.println(" Não concluido");
-            }
-        }else{
-            System.out.println(nameNinja3+ "\n Não concluido pela idade");
-        }
-
-
     }
 
 }
+
 
