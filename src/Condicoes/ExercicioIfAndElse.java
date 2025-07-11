@@ -21,6 +21,8 @@ public class ExercicioIfAndElse {
 
         System.out.println("A média da notá é "+mediaAritmetica);
 
+/*        String media = (mediaAritmetica  >= 7) ? "Você Passou" : "Não passou";
+        System.out.println(media);*/
         if(mediaAritmetica <= 4){
             System.out.println("Reprovado !");
         }else if(mediaAritmetica >= 4.1 && mediaAritmetica <= 7.0){
