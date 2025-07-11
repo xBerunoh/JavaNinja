@@ -17,6 +17,7 @@ public class EstudoSwitchCase {
         System.out.println("1 - Naruto Uzumaki");
         System.out.println("2 - Sasuke Uchiha");
         System.out.println("3 - Sakura Haruno");
+
         // Pedir para o usuário escolher uma das opções
        int escolhaDoUsuario = sc.nextInt();
         System.out.println("Você digitou o número: "+escolhaDoUsuario);
