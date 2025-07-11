@@ -16,10 +16,16 @@ public class ScannerDoUsuario {
         // System.in -< Autoriza o usuário colocar qualquer coisa dentro
         System.out.println("Digite o nome do Ninja: ");
         String nome = boxText.nextLine(); // receber uma string
+
+        // Receber idade do ninja
         System.out.println("Digite a idade do Ninja: ");
-        int idade = boxInt.nextInt(); // recebe um número
+        int idade = boxInt.nextInt(); // recebe um número inteiro
+
+        // Imprimir nome e idade do ninja
         System.out.println("O nome do ninja é "+nome);
         System.out.println("A idade do Ninja é: "+idade);
+
+        // Tratamento de Dados !
         if(idade <= 7){
             System.out.println("Podera fazer o teste para se torna um ninja");
         }else{
