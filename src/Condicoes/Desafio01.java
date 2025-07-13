@@ -51,7 +51,7 @@ public class Desafio01 {
         System.out.println("Nome do Ninja: "+nameNinja1);
         System.out.println("Idade do Ninja: "+idadeNinja1);
         System.out.println("Descrição da Missão: "+missaoNinja1);
-        System.out.println("Ranking da Missão: "+nivelQuestNinja1);
+        System.out.println("-Ranking da Missão: "+nivelQuestNinja1);
         System.out.println("Status da Missão:"+statusMissao1);
 
         System.out.println("----------------------------------------");
