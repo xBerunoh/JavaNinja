@@ -21,6 +21,7 @@ public class Exercicio01 {
         int quantidadeDePessoas = 0;
         int opcao = 0;
         int soma = 0;
+        int contadorIdade = 0;
         // LAÇO DE REPETIÇÃO
         while (opcao != 2) {
             System.out.println("1 - Cadastro da " + quantidadeDePessoas + " pessoa");
@@ -49,14 +50,13 @@ public class Exercicio01 {
 
         // CONTAR QUANTAS PESSOAS SÃO MAIORES DE 18
         for (int i = 0; i < quantidadeDePessoas ; i++) {
-            if (idadeDePessoas[i] >= 18){
-                soma =+ idadeDePessoas.length ;
+            if (idadeDePessoas[i] >= 18) {
+                contadorIdade++;
             }
         }
         // Mostrar a quantidade de pessoas que são maiores de 18
-        System.out.println("Quantidade maiores de idade: "+soma);
-        }
-
-
+        System.out.println("Quantidade maiores de idade: "+contadorIdade);
     }
 
+
+}
