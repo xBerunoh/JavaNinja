@@ -6,44 +6,44 @@ import java.util.Scanner;
 public class Desafio02 {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
-        int menu = 0;
+        // Criar um Array
         int NUMERO_MAX = 5;
-        int qtaNinjas = 0;
-        String[] cadastrarNinja = new String[NUMERO_MAX];
+        String[] ninja = new String[NUMERO_MAX];
+        int menu = 0;
+        // Contador
+        int contNinjas = 0;
         while(menu != 3){
+
         System.out.println("1 - Cadastrar Ninja");
         System.out.println("2 - Listar Ninjas");
         System.out.println("3 - Sair");
         System.out.println("Escolha alguma opção");
-        menu   = sc.nextInt(); // Usuário entrar com a opção do menu
+        menu = sc.nextInt();
         sc.nextLine();
+
         switch (menu){
             case 1:
-                if(qtaNinjas < NUMERO_MAX ){
-                System.out.print("Cadastrar o ninja: ");
-                cadastrarNinja[qtaNinjas] = sc.nextLine();
-                qtaNinjas++;
-                } else {
-                    System.out.println("Valor maximo de ninjas, impossivel de cadastrar ! ");
+                if (contNinjas < 5){
+                System.out.println("Cadastrar Ninja: ");  
+                ninja[contNinjas] = sc.nextLine();
+                contNinjas++;
+                }else{
+                    System.out.println("Não possui mais espaço para cadastrar ninjas !");
                 }
                 break;
             case 2:
-                if(qtaNinjas == 0){
-                    System.out.println("Nenhum ninja foi encontrado !");
+                if(contNinjas == 0){
+                    System.out.println("Não possui nenhum ninja cadastrado !");
                 }else{
-                for (int i = 0; i < qtaNinjas; i++) {
-                    System.out.println(i+" - "+cadastrarNinja[i]);
+                for (int i = 0; i < contNinjas; i++) {
+                    System.out.println(ninja[i]);
                 }
                 }
-
-            case 3:
-                System.out.println("Estamos saindo do programa !");
-                break;
             default:
-                System.out.println("Opção invalida!");
+                System.out.println("Opção Invalida !");
                 break;
-
-
         }
+        }
+
     }
-}}
+}
