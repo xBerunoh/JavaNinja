@@ -35,6 +35,7 @@ public class Desafio02 {
                     System.out.println(i+" - "+cadastrarNinja[i]);
                 }
                 }
+
             case 3:
                 System.out.println("Estamos saindo do programa !");
                 break;
