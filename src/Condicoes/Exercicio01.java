@@ -1,5 +1,6 @@
 package Condicoes;
 
+import javax.imageio.metadata.IIOMetadataFormatImpl;
 import java.util.Scanner;
 
 public class Exercicio01 {
@@ -11,7 +12,7 @@ public class Exercicio01 {
         A média das idades.*/
         Scanner sc = new Scanner(System.in);
         // LIMITANDO QUANTAS PESSOAS SERÃO CADASTRADAS
-        int NUMERO_MAX = 2;
+        int NUMERO_MAX = 5;
 
         // CRIAÇÃO DO ARRAY
         String[] cadastroDePessoas = new String[NUMERO_MAX];
@@ -21,7 +22,6 @@ public class Exercicio01 {
         int quantidadeDePessoas = 0;
         int opcao = 0;
         int soma = 0;
-        int contadorIdade = 0;
         // LAÇO DE REPETIÇÃO
         while (opcao != 2) {
             System.out.println("1 - Cadastro da " + quantidadeDePessoas + " pessoa");
@@ -31,7 +31,7 @@ public class Exercicio01 {
             // CADASTRO DE PESSOAS
             if (quantidadeDePessoas == NUMERO_MAX) {
                 System.out.println("CADASTRO LIMITE ATINGINDO");
-            } else if (quantidadeDePessoas < 3) {
+            } else if (quantidadeDePessoas < 6) {
                 System.out.println("Cadastre o nome da pessoa");
                 cadastroDePessoas[quantidadeDePessoas] = sc.nextLine(); // RECEBE O NOME
                 System.out.println("Cadastre a idade da pessoa");
@@ -45,18 +45,41 @@ public class Exercicio01 {
         }
         // MOSTRAR AS PESSOAS CADASTRADAS
         for (int i = 0; i < quantidadeDePessoas; i++) {
+                    if(cadastroDePessoas[i] != null){
             System.out.println(cadastroDePessoas[i] + " tem idade: " + idadeDePessoas[i]);
+        }
         }
 
         // CONTAR QUANTAS PESSOAS SÃO MAIORES DE 18
+        int contadorDeIdades = 0;
         for (int i = 0; i < quantidadeDePessoas ; i++) {
-            if (idadeDePessoas[i] >= 18) {
-                contadorIdade++;
+            if (idadeDePessoas[i] >= 18){
+                contadorDeIdades++;
             }
         }
-        // Mostrar a quantidade de pessoas que são maiores de 18
-        System.out.println("Quantidade maiores de idade: "+contadorIdade);
+        System.out.println("Quantidade maiores de idade: "+contadorDeIdades);
+        // DESCOBRIR QUEM É MAIOR DE IDADE
+        int maior = idadeDePessoas[0];
+        int indiceMaior = 0;
+        for (int i = 1; i < quantidadeDePessoas; i++) {
+            if(idadeDePessoas[i] > maior){
+                maior = idadeDePessoas[i];
+                indiceMaior = i;
+            }
+        }
+                    System.out.println("Maior idade é "+maior);
+        // Média das idades
+
+        int somaIdades = 0;
+        for (int i = 0; i < quantidadeDePessoas; i++) {
+            somaIdades += idadeDePessoas[i];
+        }
+        double media = (double) somaIdades / quantidadeDePessoas;
+        System.out.printf("Média das idades: %.2f\n", media);
+        System.out.println("soma dos idades: "+somaIdades);
+
+        }
+
     }
 
 
-}
