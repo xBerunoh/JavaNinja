@@ -35,7 +35,8 @@ public class Main {
        int idadeSasukeHokag = Sasuke.idadeParaSerHokage(Sasuke.idade);
         System.out.println(idadeSasukeHokag);
 
-
-
+        // Fazendo a chamada do meu método HelloNinja
+        String ninjaHello= Sasuke.helloNinja();
+        System.out.println(ninjaHello);
     }
 }

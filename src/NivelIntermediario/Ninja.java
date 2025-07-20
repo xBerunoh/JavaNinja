@@ -14,10 +14,16 @@ public class Ninja
         System.out.println("Sharigana tivado !");
     }
 
-    //Método que precisa retornar algo !
+    //Método inteiro que precisa retornar um número inteiro
 
     public int idadeParaSerHokage(int idadeHokage){
         return idadeMinimaHokage - idade;
+    }
+
+    // Método String precisa retorna um bloco de caracter
+
+    public String helloNinja(){
+        return "Oi eu sou um ninja";
     }
 
 }
