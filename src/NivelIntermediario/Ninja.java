@@ -4,26 +4,19 @@ public class Ninja
 {
 // Ninja precisa de um NOME , IDADE E ALDEIA;
     String nome;
-    String aldeia;
+    String missao;
+    String statusDaMissao;
+    String nivelDificuldade;
     int idade;
-    int idadeMinimaHokage = 50;
-    // Métodos
 
-    // Método que não retorna nada VOID
-    public void ativarSharigan(){
-        System.out.println("Sharigana tivado !");
-    }
+    // Método , para mostrar todos os meus atributos do ninja !
+    public void mostrarInformacao(){
+        System.out.println("Nome do Ninja: "+nome);
+        System.out.println("A Idade do Ninja: "+idade);
+        System.out.println("Nome da Missão: "+missao);
+        System.out.println("Status da Missão: "+statusDaMissao);
+        System.out.println("Nivel da Dificuldade: "+nivelDificuldade);
 
-    //Método inteiro que precisa retornar um número inteiro
-
-    public int idadeParaSerHokage(int idadeHokage){
-        return idadeMinimaHokage - idade;
-    }
-
-    // Método String precisa retorna um bloco de caracter
-
-    public String helloNinja(){
-        return "Oi eu sou um ninja";
     }
 
 }

@@ -1,42 +1,76 @@
 package NivelIntermediario;
 
+import java.util.Scanner;
+
 public class Main {
     public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        Ninja ninja = new Ninja();
+        System.out.println("Menu");
 
-    // Criar um ninja Sasuke Uchiha , que sasuke é um OBJETO !
+        System.out.println("1 - Adicionar Novos Ninjas !");
+        System.out.println("2 - Atualizar Habilidades especiais dos Ninjas !");
+        System.out.println("3 - Exibir informações do Ninja !");
+        System.out.println("4 - Sair");
+        // receber a opção do usuário do menu
+        int menu = sc.nextInt();
+        sc.nextLine();
+        while (menu != 4){
+        switch (menu){
+            case 1:
+                // Criando um obejto (Ninja Normal !)
 
-         Ninja Sasuke = new Ninja();
+                System.out.print("Digite o Nome do Ninja: ");ninja.nome = sc.nextLine();
+                System.out.print("Digite a Idade do Ninja: "); ninja.idade = sc.nextInt();
+                sc.nextLine();
+                System.out.print("Digite o Status da Missao: ");ninja.statusDaMissao = sc.nextLine();
+                System.out.print("Digite o nivel da Missaõ: ");ninja.nivelDificuldade = sc.nextLine();
+                break;
+                case 2:
+                    ninja.mostrarInformacao();
+                    break;
+        }
+        }
 
-         Sasuke.nome = "Sasuke";
-         Sasuke.idade = 30;
-         Sasuke.aldeia = "Renegado";
+
+        // ninja.habilidadeEspecial = sc.nextLine();
+
+        // Criando um obejto (Ninja UCHIHA !)
+        Uchiha ninjaUchiha = new Uchiha();
+        ninjaUchiha.nome = sc.nextLine();
+        ninjaUchiha.idade = sc.nextInt();
+        ninjaUchiha.statusDaMissao = sc.nextLine();
+        ninjaUchiha.nivelDificuldade = sc.nextLine();
+        ninjaUchiha.habilidadeEspecial = sc.nextLine();
 
 
-        System.out.println("Nome: "+Sasuke.nome+
-                " Idade:"+Sasuke.idade+
-                " Aldeia:"+Sasuke.aldeia
-        );
 
-        // Criar outro Objeto, que vou chamar de NARUTO !
+//        Sasuke.nivelDificuldade = "A";
+//        Sasuke.statusDaMissao = "Em Andamento";
+//        // Objeto 2
+//        Uzumaki Naruto = new Uzumaki();
+//        Naruto.nome = "Naruto";
+//        Naruto.idade = 18;
+//        Naruto.modoSabio();
+//        // Objeto 3
+//        Haruno Sakura = new Haruno();
+//        Sakura.nome = "Sakura";
+//        Sakura.idade = 18;
+//        Sakura.ativarCura();
+//        // Objeto 4
+//        Hyuga Hinata = new Hyuga();
+//        Hinata.nome = "Hinata";
+//        Hinata.idade = 17;
+//        Hinata.ativarByakugan();
+//        // Chamando metodo para mostrar informaçõe dos Ninjas !
+//        Naruto.mostrarInformacao();
+//        System.out.println("------------------");
+//        Sasuke.mostrarInformacao(); // Objeto 1
+//         Uchiha Sasuke = new Uchiha();
+//         Sasuke.nome = "Sasuke";
+//         Sasuke.idade = 19;
+//         Sasuke.habilidadeEspecial = "Sharigan";
+//         Sasuke.missao = "Resgatar amigos perdidos na vila da chuva!";
 
-        // Objeto criado, atribuir valores:
-        Ninja naruto = new Ninja();
-        naruto.nome = "Naruto Uzumaki";
-        naruto.idade = 18;
-        naruto.aldeia = "Konoha";
-
-        System.out.println("Nome: "+naruto.nome+
-                " Idade:"+naruto.idade+
-                " Aldeia:"+naruto.aldeia
-        );
-
-        Sasuke.ativarSharigan();
-
-       int idadeSasukeHokag = Sasuke.idadeParaSerHokage(Sasuke.idade);
-        System.out.println(idadeSasukeHokag);
-
-        // Fazendo a chamada do meu método HelloNinja
-        String ninjaHello= Sasuke.helloNinja();
-        System.out.println(ninjaHello);
     }
 }
