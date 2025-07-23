@@ -5,5 +5,6 @@ public class Main {
         Hokages hashirama = new Hokages("hashirama",40,false);
         Hokages tobirama = new Hokages("Tobirama",49,false);
 
+
     }
 }
