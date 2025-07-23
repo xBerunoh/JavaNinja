@@ -1,12 +1,9 @@
 package classesAbstratas;
 
-public class Namikaze extends Hokages{
+public abstract class Namikaze extends Hokages{
 
 
-    @Override
-    public void sabedoriaHokage() {
 
-    }
 
 
 }
