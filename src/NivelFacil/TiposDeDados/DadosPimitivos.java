@@ -9,11 +9,10 @@ public class DadosPimitivos {
          * */
 
         int idade = 16; // valor maximo do INTEIRO 2147483648
-        String nome = "Sasuke Uchiha";
         double altura = 1.68;
         char inicial = 'S';
         boolean vivoOuMorto = true;
-        Long saldoBancario = 30223372037L; // Valor maximo de 9,223372037×10¹⁸ ..
+        long saldoBancario = 30223372037L; // Valor maximo de 9,223372037×10¹⁸ ..
 
         System.out.println(idade); // Comando para mostrar para o usuário
         System.out.println("saldo Bancario é  " + saldoBancario);
