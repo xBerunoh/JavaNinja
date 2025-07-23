@@ -17,6 +17,6 @@ public abstract class Hokages {
     }
 
     public Hokages() {
-        // `No - args`
+
     }
 }
