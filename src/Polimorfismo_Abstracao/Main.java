@@ -8,10 +8,14 @@ public class Main {
         // Nosso objeto uzumaki
         Uzumaki naruto = new Uzumaki();
         naruto.nome = "Naruto";
-        // Nosso objeto Uchiha.
-        Uchiha sasuke = new Uchiha();
         naruto.habilidadeEspecial();
         naruto.estrategiaNinja();
-    naruto.estrategiaDeCombate();
+        naruto.estrategiaDeCombate();
+        // Nosso objeto Uchiha.
+        Uchiha sasuke = new Uchiha();
+        sasuke.nome = "Sasuke";
+        sasuke.estrategiaNinja();
+        sasuke.habilidadeEspecial();
+        sasuke.estrategiaDeCombate();
     }
 }
