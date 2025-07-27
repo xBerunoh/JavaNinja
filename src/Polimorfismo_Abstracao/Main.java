@@ -8,11 +8,9 @@ public class Main {
         // Objeto Ninja não pode ser criado por ser uma classe abstrata !
 
         // Nosso objeto uzumaki
-        Uzumaki naruto = new Uzumaki();
-        naruto.nome = "Naruto";
+        Uzumaki naruto = new Uzumaki("Naruto Uzumaki","Aldeida da Folha",18,23,nivelNinja.GENIN);
         naruto.habilidadeEspecial();
-        naruto.estrategiaNinja();
-        naruto.estrategiaDeCombate();
+
 
         //  objeto Uchiha 1.
 
