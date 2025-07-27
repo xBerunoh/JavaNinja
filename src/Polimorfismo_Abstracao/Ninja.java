@@ -25,6 +25,7 @@ public abstract class Ninja implements estrategiaDeBatalha{
         this.idade = idade;
     }
 
+
     // TODO: Sobrecarga de construtores, chamandos novos atributos
     public Ninja(String nome, String aldeia, int idade, int numeroDeMissoesConcluidas, nivelNinja rank) {
         this(nome,aldeia,idade); // sobrecarga de construtores - referencia de todos
