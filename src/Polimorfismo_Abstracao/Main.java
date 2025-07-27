@@ -17,15 +17,18 @@ public class Main {
         // Nosso objeto Uchiha.
 
         Uchiha sasuke = new Uchiha();
-        sasuke.nome = "Sasuke";
-        sasuke.estrategiaNinja();
-        sasuke.habilidadeEspecial();
-        sasuke.estrategiaDeCombate();
+
 
         // Objeto uchiha 2
 
         Uchiha itachi = new Uchiha("Itachi Uchiha","Aldeia da FOlha", 20);
         itachi.habilidadeEspecial();
+
+        // Objeto Uchiha 3
+
+        Uchiha madara = new Uchiha("Marada","Aldeida da Folha",45,400,nivelNinja.KAGE);
+        madara.habilidadeEspecial();
+        madara.estrategiaDeCombate();
 
     }
 
