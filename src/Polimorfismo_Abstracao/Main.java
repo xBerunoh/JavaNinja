@@ -16,7 +16,8 @@ public class Main {
 
         // Nosso objeto Uchiha.
 
-        Uchiha sasuke = new Uchiha();
+        Uchiha sasuke = new Uchiha("Sasuke Uchiha","Aldeia da Folha",19,25,nivelNinja.GENIN);
+
 
 
         // Objeto uchiha 2
