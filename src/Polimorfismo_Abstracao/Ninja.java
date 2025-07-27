@@ -4,9 +4,15 @@ public abstract class Ninja implements estrategiaDeBatalha{
     String nome;
     String aldeia;
     int idade;
+    int numeroDeMissoesConcluidas;
+    nivelNinja rank;
+
 
     // `t o d o ` : Para alerta sobre algo que foi feito ! opção de nevagação !
     //TODO: Incluir 2 novos atributos : NumeroDeMissaoConcluido , Rank
+    // TODO: RANK: Gennin , Chunnin , Jounnin, Hokage
+
+
 
 
     // Construtor Padrão
@@ -17,6 +23,13 @@ public abstract class Ninja implements estrategiaDeBatalha{
         this.nome = nome;
         this.aldeia = aldeia;
         this.idade = idade;
+    }
+
+    // TODO: Sobrecarga de construtores, chamandos novos atributos
+    public Ninja(String nome, String aldeia, int idade, int numeroDeMissoesConcluidas, nivelNinja rank) {
+        this(nome,aldeia,idade); // sobrecarga de construtores - referencia de todos
+        this.numeroDeMissoesConcluidas = numeroDeMissoesConcluidas;
+        this.rank = rank;
     }
 
     // Metodo Geral - Todos os ninjas vão ter !
