@@ -14,15 +14,15 @@ public class Main {
         naruto.estrategiaNinja();
         naruto.estrategiaDeCombate();
 
-        // Nosso objeto Uchiha.
+        //  objeto Uchiha 1.
 
         Uchiha sasuke = new Uchiha("Sasuke Uchiha","Aldeia da Folha",19,25,nivelNinja.GENIN);
-
+        sasuke.habilidadeEspecial();
 
 
         // Objeto uchiha 2
 
-        Uchiha itachi = new Uchiha("Itachi Uchiha","Aldeia da FOlha", 20);
+        Uchiha itachi = new Uchiha("Itachi Uchiha","Aldeia da FOlha", 20,230,nivelNinja.JOUNIN);
         itachi.habilidadeEspecial();
 
         // Objeto Uchiha 3
