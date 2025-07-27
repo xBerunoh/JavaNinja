@@ -8,6 +8,8 @@ public interface estrategiaDeBatalha {
 
     void inteligenciaDeCombate();
     // Sobrecarga de métodos - metodo com o mesmo nome, porem com parametros !
+
+
     void inteligenciaDeCombate(int qi);
 }
 
