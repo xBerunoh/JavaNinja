@@ -57,7 +57,7 @@ public abstract class Ninja implements estrategiaDeBatalha{
 
     }
 
-    @Override
+
     public void inteligenciaDeCombate() {
         System.out.println("Meu nome é: "+nome+" Essa é minha INTELIGENCIA de combate !");
 
@@ -65,7 +65,7 @@ public abstract class Ninja implements estrategiaDeBatalha{
 
     // Sobrecarga de metodos
 
-    @Override
+
     public void inteligenciaDeCombate(int qi) {
         if(qi > 100){
             System.out.println("Seu QI é:"+qi+" Você é um genio");
