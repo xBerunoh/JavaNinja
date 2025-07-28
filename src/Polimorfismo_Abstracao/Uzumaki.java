@@ -39,6 +39,6 @@ public class Uzumaki extends Ninja{
 
     @Override
     public String toString() {
-        return "Meu nome é"+nome+" Eu sou da"+aldeia;
+        return "Meu nome é: "+nome+"\nEu sou da: "+aldeia+" e tenho: "+idade+" anos";
     }
 }
