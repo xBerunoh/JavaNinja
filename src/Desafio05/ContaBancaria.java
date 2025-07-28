@@ -9,10 +9,15 @@ public ContaBancaria(double saldo){
     this.saldo = saldo;
 }
 
-// Métodos
+    public ContaBancaria(double saldo, TipoConta tipoConta) {
+        this(saldo);
+        this.tipoConta = tipoConta;
+    }
+
+    // Métodos
     @Override
     public void consultarSaldo() {
-        System.out.println("Seu saldo atual  é:"+saldo);
+        System.out.println("Seu saldo atual é: "+saldo);
     }
 
     // Metodo abstrato
