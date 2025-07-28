@@ -2,7 +2,7 @@ package Desafio05;
 
 public abstract class ContaBancaria implements Conta{
 double saldo;
-
+TipoConta tipoConta;
 
 //Construtor `all args`
 public ContaBancaria(double saldo){
