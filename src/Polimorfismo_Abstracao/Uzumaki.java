@@ -36,4 +36,9 @@ public class Uzumaki extends Ninja{
             System.out.println("Seu QI é:"+qi+" Você precisa treinar mais suas estrategias !");
         }
     }
+
+    @Override
+    public String toString() {
+        return "Meu nome é"+nome+" Eu sou da"+aldeia;
+    }
 }
