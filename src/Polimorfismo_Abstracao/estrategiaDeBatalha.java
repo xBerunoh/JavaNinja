@@ -1,6 +1,7 @@
 package Polimorfismo_Abstracao;
 
 public interface estrategiaDeBatalha {
+    // ATRIBUTOS TODOS SAO FINAL
     // Interfaces servem como CONTRATOS !!!!
     // Metodo abstrato - Obrigatorio em todas as classes !
     void estrategiaNinja();

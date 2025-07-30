@@ -10,7 +10,9 @@ public class Main {
         // Nosso objeto uzumaki
         Uzumaki naruto = new Uzumaki("Naruto Uzumaki","Aldeida da Folha",18,23,nivelNinja.GENIN);
         System.out.println(naruto);
+      naruto.tacarKunai();
 
+        System.out.println(naruto.altura);
 
         //  objeto Uchiha 1.
 

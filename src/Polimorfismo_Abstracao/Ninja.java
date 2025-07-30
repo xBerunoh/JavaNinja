@@ -6,7 +6,7 @@ public abstract class Ninja implements estrategiaDeBatalha{
     int idade;
     int numeroDeMissoesConcluidas;
     nivelNinja rank;
-
+    final double altura = 2.10;
 
     // `t o d o ` : Para alerta sobre algo que foi feito ! opção de nevagação !
     //TODO: Incluir 2 novos atributos : NumeroDeMissaoConcluido , Rank
@@ -75,6 +75,14 @@ public abstract class Ninja implements estrategiaDeBatalha{
             System.out.println("Seu QI é:"+qi+" Você precisa treinar mais suas estrategias !");
         }
     }
+    // TODO NINJA VAI FAZER ESSE METODO
+    final void tacarKunai(){
+        System.out.println("Eu sou um método da classe mãe !");
+        // metodo FINAL = CONSTANTE, NÃO PODE SER MUDADO, ESSE METODO NÃO PODE SER SOBSCRITO
+    }
+
+
+
 }
 
 
