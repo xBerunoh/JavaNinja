@@ -83,6 +83,7 @@ public abstract class Ninja implements estrategiaDeBatalha{
 
 
 
+
 }
 
 
