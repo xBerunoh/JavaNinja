@@ -4,7 +4,7 @@ package Polimorfismo_Abstracao;
 // Class Abstrata , você não pode criar um objeto !
 // Class Final , você não pode estender ela, porém pode criar um objeto !
 final public class Anbu {
-
+    String nome;
     public void anbu(){
         System.out.println("Eu sou um Anbu !");
     }
