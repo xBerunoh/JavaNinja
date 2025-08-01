@@ -29,6 +29,10 @@ public class Main {
 
         Uchiha madara = new Uchiha("Marada","Aldeida da Folha",45,400,nivelNinja.KAGE);
 
+        Anbu kakashiAnbu = new Anbu();
+        kakashiAnbu.nome = "Kakashi";
+
+        System.out.println(kakashiAnbu.nome);
 
     }
 
