@@ -8,7 +8,10 @@ public class Main {
         sasuke.setNome("Madara Uchiha"); // utilizando metodo set para alterar o nome do objeto SASUKE.
         System.out.println(sasuke.getNome());
 
+        Uzumaki naruto = new Uzumaki();
 
+        Missoes quest = new Missoes("re sgatar gato",RankDeMissoes.D);
+        quest.exibirDetalhes();
 
     }
 }

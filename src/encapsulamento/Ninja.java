@@ -3,10 +3,10 @@ package encapsulamento;
 public abstract class Ninja {
     // box 1
     private String nome;
-    String aldeia;
-    int idade;
-    int numerosDeMissoesConcluidas;
-    double altura = 2.10;
+    private String aldeia;
+    private int idade;
+    private int numerosDeMissoesConcluidas;
+    private double altura = 2.10;
 
     // box 2
     // Tirar dados ou mostrar para o usuário eu uso o GET + NOME DA VARIAVEL.
