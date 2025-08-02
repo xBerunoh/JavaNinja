@@ -16,6 +16,19 @@ public abstract class Ninja {
 
     // box 3
     // Setters recebem valores
+
+    // Construtores
+    public Ninja(String nome, String aldeia, int idade, int numerosDeMissoesConcluidas, double altura) {
+        this.nome = nome;
+        this.aldeia = aldeia;
+        this.idade = idade;
+        this.numerosDeMissoesConcluidas = numerosDeMissoesConcluidas;
+        this.altura = altura;
+    }
+    // Construtores
+    public Ninja() {
+    }
+
     public void setNome(String nome){
       this.nome = nome;
     };
