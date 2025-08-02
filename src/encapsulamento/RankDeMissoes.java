@@ -2,12 +2,14 @@ package encapsulamento;
 
 public enum RankDeMissoes {
 
-   // MISSÕES
-    D("Baixo",2),
-    C("Moderado",3),
-    A("Dificil",4),
-    S("Expert",5),;
+   // Rank de Missões
 
+    D("Baixo",1),
+    C("Moderado",2),
+    B("Dificil",3),
+    A("Expert",4),
+    S("Impossivel",5),
+    ;
 
     private String descricao;
     private int pontuacao;
