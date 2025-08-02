@@ -10,7 +10,7 @@ public class Main {
 
         Uzumaki naruto = new Uzumaki();
 
-        Missoes quest = new Missoes("re sgatar gato",RankDeMissoes.D);
+        Missoes quest = new Missoes("resgatar o gato",RankDeMissoes.D);
         quest.exibirDetalhes();
 
     }

@@ -8,7 +8,7 @@ public class Missoes {
     // METODO PARA MOSTRAR INFORMACOES
 
     public void exibirDetalhes(){
-        System.out.println("Missão: "+nome +" Rank:"+rank);
+        System.out.println("Missão: "+nome+" - Dificuldade: "+getRank().getDescricao() +" - Pontuação:"+rank.getPontuacao());
     }
 
     public Missoes(String nome, RankDeMissoes rank) {

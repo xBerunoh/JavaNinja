@@ -18,4 +18,12 @@ public enum RankDeMissoes {
         this.descricao = descricao;
         this.pontuacao = pontuacao;
     }
+
+    public String getDescricao() {
+        return descricao;
+    }
+
+    public int getPontuacao() {
+        return pontuacao;
+    }
 }
