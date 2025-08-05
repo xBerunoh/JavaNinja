@@ -1,6 +1,6 @@
 package Resumo;
 
-public enum Bijus {
+public enum Biju {
 
     SHUKAKU("Shukaku", "Gaara", 1),
     MATATABI("Matatabi", "Yugito Nii", 2),
@@ -22,7 +22,7 @@ public enum Bijus {
 * Construtores ` all args`
 *
 * */
-    Bijus(String nomeBiju, String jinchuriki, int numeroDeCaldas) {
+    Biju(String nomeBiju, String jinchuriki, int numeroDeCaldas) {
         this.nomeBiju = nomeBiju;
         this.jinchuriki = jinchuriki;
         this.numeroDeCaldas = numeroDeCaldas;
@@ -32,6 +32,8 @@ public enum Bijus {
      * Construtores ` no args`
      *
      * */
-    Bijus() {
+    Biju() {
     }
+
+    public void teste(){}
 }

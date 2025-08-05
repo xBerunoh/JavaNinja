@@ -1,7 +1,7 @@
 package Resumo;
 
 public class Uzumaki extends Ninja{
-    Bijus bijus;
+    Biju biju;
 
 
     public Uzumaki() {
@@ -13,9 +13,9 @@ public class Uzumaki extends Ninja{
 
 
     // SOBRECARGA DE CONSTRUTOR
-    public Uzumaki(String nome, String aldeia, int idade, int numeroDeMissoesConcluidas, double altura, NivelNinja nivel, Bijus bijus) {
+    public Uzumaki(String nome, String aldeia, int idade, int numeroDeMissoesConcluidas, double altura, NivelNinja nivel, Biju biju) {
         super(nome, aldeia, idade, numeroDeMissoesConcluidas, altura, nivel);
-        this.bijus = bijus;
+        this.biju = biju;
     }
 
     @Override

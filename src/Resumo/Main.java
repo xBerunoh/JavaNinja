@@ -10,9 +10,9 @@ public class Main {
         sasuke.shariganAtivado();
         itachi.shariganAtivado();
 
-    Uzumaki naruto = new Uzumaki("Naruto","Aldeia da Folha",18,28,1.66,NivelNinja.GENNIN,Bijus.KURAMA);
+    Uzumaki naruto = new Uzumaki("Naruto","Aldeia da Folha",18,28,1.66,NivelNinja.GENNIN, Biju.KURAMA);
     naruto.HabilidadeEspecial();
-        System.out.println(naruto.bijus);
+        System.out.println(naruto.biju);
 
 
 
