@@ -4,14 +4,12 @@ import java.util.ArrayList;
 
 public class Main {
     public static void main(String[] args) {
-     EquipamentosNinja kunai =  new EquipamentosNinja("Kunai");
-        EquipamentosNinja shuriken =  new EquipamentosNinja("shuriken");
-        EquipamentosNinja pergaminho =  new EquipamentosNinja("pergaminho");
+     BolsaGenerica<Object> bolsaNinja = new BolsaGenerica<>();
+     bolsaNinja.adicionarEquipamentos(new EquipamentosNinja("Kunai"));
+        bolsaNinja.adicionarEquipamentos(new EquipamentosNinja("Shurikem"));
+        bolsaNinja.adicionarEquipamentos(new EquipamentosNinja("Pergaminho"));
+        bolsaNinja.adicionarEquipamentos(new EquipamentosNinja("Remedio"));
 
-        BolsaGenerica<EquipamentosNinja> bolsaGenerica = new BolsaGenerica<>();
-        bolsaGenerica.adicionarEquipamentos(kunai);
-        bolsaGenerica.adicionarEquipamentos(shuriken);
-        bolsaGenerica.adicionarEquipamentos(pergaminho);
-        System.out.println(bolsaGenerica);
+     bolsaNinja.mostrarEquipamento();
     }
 }

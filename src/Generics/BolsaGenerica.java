@@ -5,8 +5,12 @@ import java.util.List;
 
 // Deixar classe generica utiliza o simbolo <>
 public class BolsaGenerica<T> {
+
+    // Inicializar nosso array !
     private List<T> equipamentos; // lista generia !
 
+
+    // Construtores
     public BolsaGenerica() {
         this.equipamentos = new ArrayList<>();
     }
@@ -30,5 +34,11 @@ public class BolsaGenerica<T> {
     @Override
     public String toString(){
         return  "Bolsas de equipamentos: "+ equipamentos.toString();
+    }
+
+    public void mostrarEquipamento(){
+        for (T equipamento : equipamentos){
+            System.out.println(equipamento);
+        }
     }
 }
