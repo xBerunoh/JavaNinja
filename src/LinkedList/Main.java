@@ -8,5 +8,15 @@ public class Main {
         ninjas.add("Naruto Uzumaki");
         ninjas.add("Sasuke Uchiha");
         ninjas.add("Sakura Haruno");
+
+        System.out.println(ninjas);
+
+        ninjas.add("Kakashi Hatake");
+
+        System.out.println(ninjas);
+
+        ninjas.remove(2);
+
+        System.out.println(ninjas);
     }
 }
